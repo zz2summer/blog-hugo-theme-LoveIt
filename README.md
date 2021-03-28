@@ -1,5 +1,3 @@
-
-
 # Github Pages + Hugo 搭建个人博客
 
 ## 零、效果
@@ -100,7 +98,7 @@
 
 3. 编辑文章内容，保存。
 
-![image-20210326154357858](README-Images/image-20210326154357858.png)
+   ![image-20210326154357858](README-Images/image-20210326154357858.png)
 
 4. 启动 Hogo server
 
