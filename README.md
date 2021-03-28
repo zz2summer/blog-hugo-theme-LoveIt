@@ -16,7 +16,7 @@
 
 1. 打开 Github ，新建一个库。
 
-   ![image-20210324160452279](README-Images\image-20210324160452279.png)
+   ![image-20210324160452279](README-Images/image-20210324160452279.png)
 
 2. 输入项目名，要与 Github 用户名一致。比如我的是 zz2summer，那么输入的 Repository name 就是 `zz2summer.github.io`，README 也一并勾选上。
 
