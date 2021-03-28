@@ -261,6 +261,8 @@ Hugo 的配置文件和文章中引用图片都是从`static`作为根目录的�
 2. 完成之后，在引用路径前加个 `/`，比如原来引用方式 `![](imgs/pic_name.png)` ，需要修改为 `![](/imgs/pic_name.png)` 。
 3. 之后将该图片文件夹移动到 static 目录下即可。
 
+注意：如果该文件夹名包含空格可能会不能被显示，支持中文，但是不支持含空格。
+
 ### 5. 图片加水印
 
 1. 找一份字体放到根目录下（H:\HugoWebsite\blog）。
@@ -452,6 +454,31 @@ cd ..
 </script>
 <span id="sitetime">载入运行时间...</span>
 ```
+
+
+### 5. 图片放大功能
+
+**方法一：**
+
+部分主题自带了 lightgallery 效果，在配置文件设置为 true 即可。
+
+**方法二：**
+
+1. 加载`jqury`和`fancybox`文件，在博客文件`footer.html`中添加下面的文件
+
+   ```html
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   ```
+
+2. 在博客文件中需要加载图片的地方插入下面html代码
+
+   ```html
+   <a data-fancybox="gallery" href="图片链接"><img src="图片链接"></a>
+   ```
+
 
 
 
